@@ -23,8 +23,8 @@ Sub stockTotal()
         maxDec = 0
         maxVol = 0
         
-        'Sort rows alphabetically depending on the ticker key to run the rest of the code.
-        ws.Columns("A:G").Sort key1:=ws.Range("A2"), order1:=xlAscending, Header:=xlYes
+        'Sort rows to run the rest of the code: alphabetically depending on the ticker key and then by date.
+        ws.Columns("A:G").Sort key1:=ws.Range("A2"), order1:=xlAscending, Header:=xlYes, key2:=ws.Range("B2"), order2:=xlAscending, Header:=xlYes
     
         'Generate the summary table headers.
         ws.Cells(1, 9).Value = "Ticker"
@@ -34,7 +34,7 @@ Sub stockTotal()
         'Define opening price of the first ticker symbol.
         stockOpen = ws.Cells(2, 3).Value
     
-        'Sum values of opening price, closing price, and total stock volume for all the entries of each ticker symbol value.
+        'Sum values of total stock volume for all the entries of each ticker symbol value.
         For i = 2 To lastRow
             tickerSymbol = ws.Cells(i, 1).Value
             stockVolume = stockVolume + ws.Cells(i, 7).Value
@@ -125,6 +125,7 @@ Sub stockTotal()
     'Display a message when the summary tables are ready in every datasheet.
     MsgBox ("Your data is ready!")
 End Sub
+
 
 
 
