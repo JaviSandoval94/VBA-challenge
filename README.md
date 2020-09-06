@@ -1,5 +1,5 @@
 # Introduction
-Stock market analysts often work with large, structured data sets to extract valuable market insights and make forecasts based on this data. The analysis of such sets often includes repetitive tasks which can be automated using VBA scripting. This project analyzes real stock market data to achieve the following goals for each analyzed year:
+Stock market analysts often work with large, structured data sets to extract valuable market insights and make forecasts based on the data. The analysis of such sets often includes repetitive tasks which can be automated using VBA scripting. This project analyzes real multi-year stock market data to achieve the following goals for each analyzed year:
 1. For each ticker symbol in the data set, get the yearly change, percent change and total stock volume.
 2. Return the greatest % increase, greatest % decrease and greatest total volume
 3. Run through every worksheet, i.e. every year, by running the VBA script once.
