@@ -8,7 +8,7 @@ Stock market analysts often work with large, structured data sets to extract val
 Stock data Excel file from 2014 to 2018. The complete analyzed data set can be found in the Excel files included in this repository. 
 
 # Code description
-This repository contains the VBA code in the `.vb` file. This script can be run in the `.xlsm` files as macros to get the corresponding results.
+This repository contains the VBA code in the `VBA Homework script.vb` file. This script can be run in the `.xlsm` files as macros to get the corresponding results.
 
 # Conclusions
 VBA scripting can provide useful tools to perform analyses and data formatting in structured spreadsheets such as the ones found in Excel files. While this tool is extremely powerful when working with raw data, this can be more complicated when the files are given additional formatting, which is often the case with Excel files.
